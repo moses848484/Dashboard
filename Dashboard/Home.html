@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----Links to  styles---->
+    
+    <link rel="stylesheet" href="Bootstrap_Plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Bootstrap_Plugins/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./Style.css">
+     
+</head>
+<body>
+
+   <nav class="navbar navbar-dark-top custom-shadow p-1 mb-1">  <!----Navbar with shadow---->
+    <div class="container-fluid">
+      <img src="./images/logo.png" alt="navbar-image" width="60" height="60" class="image">
+        <button class="navbar-toggler ml-auto bg-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <i class="bi-list"></i>
+        </button>
+     </div>
+     </nav>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel"> <!----Offcanvas Styling---->
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success bg-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-flui">  <!----Container Fluid For Row Columns Style---->
+    <div class="app-title">
+      <h1>My Budget App</h1>  <!----My Budget Title Heading Style---->
+    </div>
+    <div class="row">  <!----Row Columns Style---->
+      <div class="col-sm-2 col-sm-2" style="width: 320px;">
+        <div class="card-block" style="height: 60px;">
+          <div class="number-events">
+            <h6 class="number-of-events">100</h6>
+            <span class="m-t-10">Total events</span>
+          </div>
+          <div class="balloon-position">
+            <i class="bi-balloon-fill"></i>
+          </div>    
+        </div>
+      </div>
+  
+      <div class="col-sm-2 col-sm-2" style="width: 320px;">
+        <div class="card-block" style="height: 60px;">
+          <div class="number-events">
+            <h6 class="number-of-events">100</h6>
+            <span class="m-t-10">Total events</span>
+          </div>
+          <div class="balloon-position">
+            <i class="bi-balloon-fill"></i>
+          </div>  
+        </div>
+      </div>
+
+      <div class="col-sm-2 col-sm-2" style="width: 320px;">  <!----Column For Total Events Style---->
+        <div class="card-block" style="height: 60px;">
+          <div class="number-events">
+            <h6 class="number-of-events">100</h6>
+            <span class="m-t-10">Total events</span>
+          </div>     
+          <div class="balloon-position">
+            <i class="bi-balloon-fill"></i>
+          </div>      
+        </div>
+      </div>
+
+      <div class="col-md-3 col-md-3">  <!----Column For Events Calendar Style---->
+        <div class="card-block" style="width: 472px; height: 101px;">
+          <div class="number-events">
+            <h6 class="number-of-events1">Events Calendar</h6>
+          </div>   
+          <div class="calendar-position1">
+            <h0 class="month1">16</h0>
+            <span class="m-t-10"><b>july</b></span>
+          </div>    
+          <div class="calendar-position2">
+            <h0 class="month2">16</h0>
+            <span class="m-t-10"><b>july</b></span>
+          </div>
+          <div class="calendar-position3">
+            <h0 class="month3">16</h0>
+            <span class="m-t-10"><b>july</b></span>
+          </div> 
+          <div class="calendar-position4">
+            <h0 class="month3">16</h0>
+            <span class="m-t-10"><b>july</b></span>
+          </div>
+        </div>             
+      </div> 
+
+      <div class="container-flu">  <!----Container Fluid Table Style---->
+				<div class="col-lg-12">
+          <div class="event-title">
+            <button type="submit" class= "event-btn" value="add"><i class="bi-feather"></i>&nbsp;Add Event</button>  
+          </div>
+					<div class="table-wrap">
+						<table class="table table-striped">
+						  <thead class="thead-primary">
+						    <tr>
+						      <th>#</th>
+						      <th>First</th>
+						      <th>Last</th>
+						      <th>Handle</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Mark</td>
+						      <td>Otto</td>
+						      <td>@mdo</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">2</th>
+						      <td>Jacob</td>
+						      <td>Thornton</td>
+						      <td>@fat</td>
+						    </tr>
+						    <tr>
+						      <th scope="row">3</th>
+						      <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+						    </tr>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+  
+<!----Script Styles---->
+  <script src="Bootstrap_Plugins/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="js/jquery.min.js"></script>
+</body>
+</html>
